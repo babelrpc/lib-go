@@ -1,0 +1,27 @@
+{
+    "headers": [
+        {
+            "name": "ProdStatus",
+            "value": "dev"
+        },
+        {
+            "name": "DataCenterLocation",
+            "value": "(development)"
+        },
+        {
+            "name": "ComputerName",
+            "value": "devbox"
+        }
+    ],
+    "serviceUrl": "/_babel_",
+    "services": [
+        {
+            "name": "FloatService",
+            "path": "/test/services/FloatService.json"
+        },
+        {
+            "name": "FractionService",
+            "path": "/test/services/FractionService.json"
+        }
+    ]
+}

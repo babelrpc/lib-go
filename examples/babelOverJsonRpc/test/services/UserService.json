@@ -1,0 +1,89 @@
+{ 
+  "_comment":"AUTO-GENERATED FILE - DO NOT MODIFY. Generated from sample.babel. ",  
+  "structs":{
+    "User":{
+      "comment":"User data",
+      
+      "properties":{
+        "name":{
+        "comment":"Name of the user",
+          "type":"string"
+
+
+        },
+        "age":{
+        "comment":"Age of the user",
+          "type":"int32"
+
+
+        },
+        "emailAddress":{
+        "comment":"Email address of the user",
+          "type":"string"
+
+
+        },
+        "id":{
+        "comment":"Internally assigned user id",
+          "type":"int32"
+
+
+        }
+
+      }
+    }
+
+  },
+  "enums":{
+
+  },
+  "name":"UserService",
+  "comment":"Manages users",
+  "methods":[
+
+    {
+      "comment":"Get a user given the ID",
+      "name":"GetUser"
+      ,"params":{
+        "id":{
+          "comment":"User ID",
+          "type":"int32"
+
+
+        }
+
+      }
+
+      ,"returns":{
+        "ref":"User"
+
+
+      }
+    },
+    {
+      "comment":"Add a user",
+      "name":"AddUser"
+      ,"params":{
+        "user":{
+          "comment":"Details of the user to add",
+          "ref":"User"
+
+
+        }
+
+      }
+
+      ,"returns":{
+        "type":"int32"
+
+
+      }
+    },
+    {
+      "comment":"CLears the list",
+      "name":"Clear"
+
+
+    }
+  ]
+}

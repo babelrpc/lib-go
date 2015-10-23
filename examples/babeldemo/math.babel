@@ -1,0 +1,59 @@
+/// Math is a babel service to do basic math.
+
+namespace github.com/babelrpc/libgo/examples/babeldemo/math
+namespace go "github.com/babelrpc/lib-go/examples/babeldemo/math"
+
+/// The Float service performs operations on floating-point values
+service FloatService {
+	/// Adds a and b
+	float64 Add(
+		/** first addend */ float64 a,
+		/** second addend */ float64 b);
+
+	/// Subtracts b from a
+	float64 Subtract(
+		/** minuend */ float64 a,
+		/** subtrahend */ float64 b);
+
+	/// Multiplies a and b
+	float64 Multiply(
+		/** first factor */ float64 a,
+		/** second factor */ float64 b);
+
+	/// Divides a by b
+	float64 Divide(
+		/** dividend */ float64 a,
+		/** divisor */ float64 b);
+}
+
+/// Fraction represents a fractional value
+struct Fraction {
+	/// Numerator
+	int32 Numerator = 0;
+
+	/// Denominator
+	int32 Denominator = 1;
+}
+
+/// The Fraction service performs operations on fractional values
+service FractionService {
+	/// Adds a and b
+	Fraction Add(
+		/** first addend */ Fraction a,
+		/** second addend */ Fraction b);
+
+	/// Subtracts b from a
+	Fraction Subtract(
+		/** minuend */ Fraction a,
+		/** subtrahend */ Fraction b);
+
+	/// Multiplies a and b
+	Fraction Multiply(
+		/** first factor */ Fraction a,
+		/** second factor */ Fraction b);
+
+	/// Divides a by b
+	Fraction Divide(
+		/** dividend */ Fraction a,
+		/** divisor */ Fraction b);
+}

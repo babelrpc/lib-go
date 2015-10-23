@@ -1,0 +1,133 @@
+{ 
+  "_comment":"AUTO-GENERATED FILE - DO NOT MODIFY. Generated from math.babel. Math is a babel service to do basic math.",  
+  "structs":{
+    "Fraction":{
+      "comment":"Fraction represents a fractional value",
+      
+      "properties":{
+        "Numerator":{
+        "comment":"Numerator",
+          "type":"int32"
+
+
+        },
+        "Denominator":{
+        "comment":"Denominator",
+          "type":"int32"
+
+
+        }
+
+      }
+    }
+
+  },
+  "enums":{
+
+  },
+  "name":"FractionService",
+  "comment":"The Fraction service performs operations on fractional values",
+  "methods":[
+
+    {
+      "comment":"Adds a and b",
+      "name":"Add"
+      ,"params":{
+        "a":{
+          "comment":"first addend",
+          "ref":"Fraction"
+
+
+        },
+        "b":{
+          "comment":"second addend",
+          "ref":"Fraction"
+
+
+        }
+
+      }
+
+      ,"returns":{
+        "ref":"Fraction"
+
+
+      }
+    },
+    {
+      "comment":"Subtracts b from a",
+      "name":"Subtract"
+      ,"params":{
+        "a":{
+          "comment":"minuend",
+          "ref":"Fraction"
+
+
+        },
+        "b":{
+          "comment":"subtrahend",
+          "ref":"Fraction"
+
+
+        }
+
+      }
+
+      ,"returns":{
+        "ref":"Fraction"
+
+
+      }
+    },
+    {
+      "comment":"Multiplies a and b",
+      "name":"Multiply"
+      ,"params":{
+        "a":{
+          "comment":"first factor",
+          "ref":"Fraction"
+
+
+        },
+        "b":{
+          "comment":"second factor",
+          "ref":"Fraction"
+
+
+        }
+
+      }
+
+      ,"returns":{
+        "ref":"Fraction"
+
+
+      }
+    },
+    {
+      "comment":"Divides a by b",
+      "name":"Divide"
+      ,"params":{
+        "a":{
+          "comment":"dividend",
+          "ref":"Fraction"
+
+
+        },
+        "b":{
+          "comment":"divisor",
+          "ref":"Fraction"
+
+
+        }
+
+      }
+
+      ,"returns":{
+        "ref":"Fraction"
+
+
+      }
+    }
+  ]
+}

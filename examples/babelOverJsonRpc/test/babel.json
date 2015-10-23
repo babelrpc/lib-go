@@ -1,0 +1,23 @@
+{
+    "headers": [
+        {
+            "name": "ProdStatus",
+            "value": "dev"
+        },
+        {
+            "name": "DataCenterLocation",
+            "value": "(development)"
+        },
+        {
+            "name": "ComputerName",
+            "value": "devbox"
+        }
+    ],
+    "serviceUrl": "/_babel_",
+    "services": [
+        {
+            "name": "UserService",
+            "path": "/test/services/UserService.json"
+        }
+    ]
+}

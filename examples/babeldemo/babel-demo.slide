@@ -1,0 +1,146 @@
+Babel Demo
+An example of really simple service packaging
+12:00 31 Sep 2014
+Tags: babel, webservice, json, http
+
+Michael D. Lore
+michael.lore@gmail.com
+http://babelrpc.github.io/
+@ancientlore
+
+* Define the service
+
+* A simple math service
+
+.code math.babel 4,26
+
+* Make it more interesting with fractions
+
+.code math.babel 28,35
+
+* A service for fractional math
+
+.code math.babel 37,58
+
+* Set up the project
+
+* Structure of project
+
+	babeldemo/
+		math/
+		impl/
+		test/
+		harness/
+		build.sh
+		math.babel
+
+* Build the Babel parts
+
+Generate code:
+
+.code build.sh 4
+
+Build it:
+
+.code build.sh 12,14
+
+* Implement Float service
+
+.code math/mathInterface.go 14,34
+
+* Implement Fraction service
+
+.code math/mathInterface.go 38,58
+
+* Build implementation
+
+.code build.sh 20,22
+
+* Create code to host the service
+
+* Getting Started
+
+Define package:
+
+.code btest0/test.go 2
+
+Import libraries you need:
+
+.code btest0/test.go 4,8
+
+Create a service and the service implementation object:
+
+.code btest0/test.go 11,13
+
+* Basic Example
+
+.play btest0/test.go 11,33
+
+* Adding HTTP support
+
+Add required imports:
+
+.code btest1/test.go 5,7
+
+Add the Babel handler:
+
+.code btest1/test.go 24
+
+Serve HTTP on the address of your choice:
+
+.code btest1/test.go 25
+
+* Ok, let's serve HTTP
+
+.play btest1/test.go 11,26
+
+* Ok, ok, add a test harness
+
+Compile the Babel file into the test harness metadata:
+
+.code build.sh 5
+
+Run the utility to embed the test harness in source:
+
+.code build.sh 8
+
+Build the test harness code:
+
+.code build.sh 16,18
+
+* Adding the test harness to the main code
+
+Add the import:
+
+.code btest2/test.go 8
+
+Add the HTTP handler for the test harness:
+
+.code btest2/test.go 26
+
+* Test harness version
+
+.play btest2/test.go 12,28
+
+* Add monitoring
+
+Add the import
+
+.code btest3/test.go 6
+
+Setup the monitoring system:
+
+.code btest3/test.go 27,31
+
+Add the monitoring HTTP handler:
+
+.code btest3/test.go 35
+
+Wrap the Babel handler with a counter:
+
+.code btest3/test.go 34
+
+* Monitoring example
+
+.play btest3/test.go 26,38
+

@@ -1,0 +1,34 @@
+namespace github.com/babelrpc/libgo/examples/babelOverJsonRpc/gen
+namespace go "github.com/babelrpc/lib-go/examples/babelOverJsonRpc/gen"
+
+/// User data
+struct User {
+	/// Name of the user
+	string name;
+
+	/// Age of the user
+	int32 age;
+
+	/// Email address of the user
+	string emailAddress;
+
+	/// Internally assigned user id
+	int32 id;
+}
+
+/// Manages users
+service UserService {
+
+	/// Get a user given the ID
+	User GetUser(
+		/// User ID
+		int32 id);
+
+	/// Add a user
+	int32 AddUser(
+		/// Details of the user to add
+		User user);
+
+	/// CLears the list
+	void Clear();
+}
