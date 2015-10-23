@@ -24,8 +24,8 @@ Steps to get started
 --------------------
 
 - You'll need to rebuild Babel using [build.sh](build.sh)
-- Until a time issue is fixed, you'll need to edit [lib/go/errorModel.go](lib/go/errorModel.go) and uncomment the `"time"` import.
-- Go to [lib/go](lib/go) and run `go install`.
+- Until a time issue is fixed, you'll need to edit [babel/errorModel.go](babel/errorModel.go) and uncomment the `"time"` import.
+- Go to [babel](babel) and run `go install`.
 
 Interesting Notes
 -----------------
