@@ -1,6 +1,8 @@
 module github.com/babelrpc/lib-go
 
+go 1.14
+
 require (
 	github.com/ancientlore/kubismus v1.0.1
-	github.com/golang/snappy v0.0.0-20180518054509-2e65f85255db
+	github.com/golang/snappy v0.0.1
 )
